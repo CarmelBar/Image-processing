@@ -1,0 +1,3 @@
+Q1: What does it mean to multiply each level in a different value? What do we try to control on?
+Answer: We are controlling the impact each level has on the full image. If the number is high,
+The level image will be brighter, If the number is low The level image will be darker.

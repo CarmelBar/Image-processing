@@ -1,0 +1,6 @@
+What happens (and why this happens) to the result blending from section 4 image when:
+Q2: Blending is performed with different image filters (filter_size_im = 1,3,5,7...).
+The image filters will affect the gaussian pyramid, such that the levels will be blured
+with different kernels. As the kernal is larger, the spectrum of frequences is larger for each one
+ of the laplacian levels, which means that more frequences will be blended with the mask.
+We will see the blended image sharper- with more details.

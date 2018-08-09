@@ -1,5 +1,0 @@
-Q3: What is the difference between the two results (Blurring in image space and blurring
-in Fourier space)?
-In the fourier blurring the edges are smoother, then in the convolution, since in the
-fourier blurring, we are removing high frequencies, and in the convolution process we are changing
-every pixel.

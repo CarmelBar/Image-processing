@@ -1,0 +1,12 @@
+suggest how to use the workflow you have implemented in this assignment to train a network that
+could be used for super-resolution. A full answer consists of a description of the corruption function,
+and how to properly use the restore_image() function for this task. For this context only, you could
+optionally add additional operations before calling to restore_image()
+
+Answer:
+In order to solve the problem, and to estimate a high resolution image from a low resolution one I
+will suggest to work as follows:
+1) For training set- Use clean images, run a corruption function to get low resolution of the images.
+2) The corruption function of the images can be fourier transform, and restoration with the inverse
+fourier transform with low pass filter
+3) Take a low-res image, and call restore_image() based on the described model

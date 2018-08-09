@@ -1,0 +1,3 @@
+Describe the effect of increasing the residual blocks on its performance for each task, both quanti-
+tatively in terms of the plot you got and qualitatively in terms of the differences in the image outputs of
+each model.

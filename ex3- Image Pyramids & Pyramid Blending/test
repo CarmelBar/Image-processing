@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+import sys, subprocess, os, shutil
+
+try:
+    shutil.rmtree('current')
+    shutil.rmtree('current_tmp')
+except:
+    pass
+
+os.makedirs('current_tmp')
+subprocess.check_call(['tar', 'xvf', sys.argv[1], '-C', 'current_tmp/'])
+os.rename('current_tmp/ex3','current')
+
+with open('current/__init__.py', 'w') as f:
+    f.write(' ')
+### Supress matplotlib figures if display not available ###
+if os.getenv('DISPLAY') is None or os.getenv('DISPLAY') == '':
+    import matplotlib
+    matplotlib.use('PS')
+###########
+import ex3_presubmit
+ex3_presubmit.presubmit()

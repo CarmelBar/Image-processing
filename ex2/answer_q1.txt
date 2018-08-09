@@ -1,5 +1,0 @@
-Q1: Why did you get two different magnitude images?
-Because the two magnitude were created differently:
-- In the image space, the magnitude was created by pixel sub
-- Im the Fourier space, the magnitude was created for every frequency in the range
-   by multiplying the factor.

@@ -1,0 +1,4 @@
+What happens (and why this happens) to the result blending from section 4 image when:
+Q3: Blending is performed with a varying number of pyramid levels (max_levels = 1,2,3,4,5,...).
+The higher levels will represent the lower frequencies, and thus, if we will have the structure of the image
+but not the details. The lower levels are the higher frequencies, and thus we will get the image details.

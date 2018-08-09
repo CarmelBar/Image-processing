@@ -1,2 +1,0 @@
-If the initial segment division will have a grey level segment with no pixels, the division calculation which uses the
-sum of pixels in z will fail, since it will be division in zero.
